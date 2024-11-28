@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2> Gaqana Registration Form</h2>
+        <form action="#" method="post">
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" required>
+
+			<label for="name">Last Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+			<div class="checkbox-container"> 
+				<input type="checkbox" id="remember" name="remember"> 
+				<label for="remember">Remember Me</label>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+	<style>
+		body {
+    font-family: Arial, sans-serif;
+	background-image: url(Construction.registration.jpg);
+	background-size: cover;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background-color:lightblue;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+h2 {
+    text-align: center;
+    color: #f4f4f4;
+}
+form {
+    display: flex;
+    flex-direction: column;
+	height: auto;
+	width: auto;
+}
+label {
+    margin-top: 10px;
+    color: #555555;
+}
+	input[type="text"]
+	input[type="email"]
+	input[type="password"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+	font-size: 16px;
+}
+.checkbox-container { 
+	display: flex; 
+	align-items: center; 
+	margin-top: 10px; 
+}
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+	</style>
+</body>
+</html>
+       
