@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel-like Data Entry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="button" onclick="showDataEntry()">Login</button>
+        </form>
+
+        <div id="dataEntry" style="display:none;">
+            <h2>Data Entry</h2>
+            <table id="dataTable">
+                <tr>
+                    <th>BRANCH</th>
+                    <th>SITE ID</th>
+                    <th>SITE NAME</th>
+                    <th>DESCRIPTION</th>
+                    <th>CATEGORY</th>
+                    <th>DATE</th>
+                    <th>SERIAL NUMBER</th>
+                    <th>QUALITY</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="BRANCH"></td>
+                    <td><input type="email" name="site ID"></td>
+                    <td><input type="text" name="site name"></td>
+                    <td><input type="text" name="decription"></td>
+                    <td><input type="text" name="CATEGORY"></td>
+                    <td><input type="text" name="date"></td>
+                    <td><input type="text" name="serial number"></td>
+                    <td><input type="text" name="QUALITY"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="BRANCH"></td>
+                    <td><input type="email" name="site ID"></td>
+                    <td><input type="text" name="sitename"></td>
+                    <td><input type="text" name="DESCRIPTION"></td>
+                    <td><input type="text" name="CATEGORY"></td>
+                    <td><input type="text" name="DATE"></td>
+                    <td><input type="text" name="SERIAL NUMBER"></td>
+                    <td><input type="text" name="QUALITY"></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </table>
+        </div>
+    </div>
+    <img src="C:\Users\SVA HOLDINGS\Pictures\img_data.jpg'" alt="Girl in a jacket">
+    </div>
+    <script>
+        function showDataEntry() {
+            document.getElementById('loginForm').style.display = 'none';
+            document.getElementById('dataEntry').style.display = 'block';
+            }
+    </script>
+    <style>
+     .full-width { width: 100%; height: auto; /* This maintains the aspect ratio */ }
+     body { font-family: Arial, sans-serif;
+         background-color: #f2f2f2; 
+         display: flex; height: 100vh; margin: 0; }
+          .container {
+             display: flex;
+              width: 100%;
+               height: 100%;
+             } 
+             img.full-width {
+                 width: 100%;
+                 height: auto; /* Maintain aspect ratio */ 
+                 margin-bottom: 20px; /* Space below image */ }
+             aside {
+                 width: 20%;
+                 background-color: #333; 
+                 color: white; 
+                 padding: 20px; 
+                 box-sizing: border-box;
+                 } 
+                 aside h2 {
+                  margin-top: 0;
+                          } 
+                     aside ul { 
+                        list-style-type: none;
+                         padding: 0;
+                         } 
+                         aside ul li { 
+                            margin: 10px 0;
+                         } 
+                         aside ul li a { 
+                            color: white; 
+                            text-decoration: none;
+                         } 
+                         aside ul li a:hover { 
+                            text-decoration: underline;
+                         } 
+                         main { 
+                            width: 80%; 
+                            padding: 20px; 
+                            box-sizing: border-box; 
+                            background-color: white; 
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+                        } 
+                        input[type="text"] { 
+                            width: 100%; 
+                            padding: 8px; 
+                            margin: 5px 0; 
+                            border: 1px solid #ccc; 
+                            border-radius: 4px;
+                         } 
+                         button { 
+                            background-color: #4CAF50; 
+                            color: white; 
+                            padding: 10px 20px; 
+                            border: none;
+                            border-radius: 4px; 
+                            cursor: pointer; margin-top: 20px;
+                         } 
+                         button:hover { background-color: #45a049;
+                         } 
+                         table { width: 100%; 
+                            border-collapse: collapse;
+                             margin-top: 20px;
+                            } th, td { border: 1px solid #ddd;
+                                 padding: 8px;
+                                 text-align: left;
+                                 } 
+                                 th { background-color: #f2f2f2;
+                                 }
+    </style>
+</body>
+</html>
